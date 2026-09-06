@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#25344a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="憨憨哲学">
+  <title>憨憨哲学</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <style>
+    :root{--navy:#25344a;--navy2:#172337;--blue:#587ba8;--paper:#edf2f7;--card:#fbfdff;--ink:#243044;--muted:#737e8c;--line:#d5dee8;--gold:#c79545;--green:#4d8165;--soft:#e3ebf4;--shadow:0 10px 28px #18233713}
+    *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,textarea{font:inherit;color:inherit}.app{min-height:100vh}.side{position:fixed;inset:0 auto 0 0;width:220px;background:var(--navy2);color:white;padding:25px 16px;z-index:20;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;margin-bottom:30px}.mark{width:45px;height:45px;border-radius:14px;background:#fff2;display:grid;place-items:center;font-size:25px}.brand b{display:block;font-size:15px}.brand small{font-size:11px;opacity:.62}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#d8dfeb;text-align:left;padding:12px 13px;border-radius:10px;cursor:pointer}.nav button.on{background:#fff2;color:#fff;font-weight:700}.sidefoot{margin-top:auto;font-size:11px;color:#ffffff72}.main{margin-left:220px;padding:34px clamp(18px,4vw,58px) 80px;max-width:1100px}.view{display:none}.view.on{display:block}.view-title{margin:0 0 5px;font-size:26px}.view-sub{margin:0 0 22px;color:var(--muted);font-size:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:19px;box-shadow:var(--shadow)}.hero{background:linear-gradient(135deg,#344d70,#1e2d44);color:white;border-radius:21px;padding:30px;position:relative;overflow:hidden}.hero:after{content:'φ';position:absolute;right:26px;bottom:-30px;font-family:Georgia,serif;font-size:170px;color:#fff1}.hero h1{margin:0 0 8px;font-size:clamp(24px,4vw,34px);position:relative;z-index:1}.hero p{margin:0 0 20px;opacity:.8;max-width:540px;position:relative;z-index:1}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--card);padding:11px 15px;border-radius:11px;cursor:pointer}.btn.primary{background:var(--blue);border-color:var(--blue);color:white;font-weight:700}.btn.hero-btn{background:#fff;color:var(--navy);font-weight:800;border:0;padding:14px 20px;position:relative;z-index:1}.btn.small{font-size:12px;padding:7px 10px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:15px 0}.stat .num{font-size:25px;font-weight:850}.stat .label{font-size:12px;color:var(--muted);margin-top:3px}.today{margin-top:15px}.today h3{margin:0 0 8px}.today p{color:var(--muted);font-size:13px;line-height:1.65}.progress{height:8px;background:#e5dfd5;border-radius:9px;overflow:hidden}.progress i{display:block;height:100%;background:var(--gold);border-radius:9px}.module{display:flex;align-items:center;gap:14px;margin-bottom:10px}.module .num{width:44px;height:44px;border-radius:50%;background:var(--soft);color:var(--blue);display:grid;place-items:center;font-weight:850;flex:none}.module.done .num{background:var(--green);color:white}.module .info{flex:1}.module b{display:block}.module span{font-size:12.5px;color:var(--muted)}.badge{font-size:11px;padding:4px 8px;background:var(--soft);color:var(--blue);border-radius:99px}.badge.done{background:#e5f0e9;color:var(--green)}.learn{max-width:760px}.steps{display:flex;gap:5px;margin:13px 0 17px}.steps i{height:6px;flex:1;background:#ddd6cb;border-radius:8px}.steps i.on{background:var(--gold)}.eyebrow{font-size:11px;letter-spacing:.1em;color:var(--gold);font-weight:800}.question{font-family:Georgia,"Songti SC",serif;font-size:24px;line-height:1.55;margin:10px 0 13px}.bodytext{font-size:15px;line-height:1.8}.quote{border-left:4px solid var(--gold);background:#f7f1e6;padding:13px 15px;margin:14px 0;border-radius:0 10px 10px 0;line-height:1.7}.choice{width:100%;text-align:left;border:1px solid var(--line);background:white;border-radius:12px;padding:13px 14px;margin-top:8px;cursor:pointer}.choice.sel{border-color:var(--blue);background:#edf2f8}.feedback{margin-top:12px;border-radius:11px;padding:12px 14px;background:#e9f1ec;color:#365f49;line-height:1.65;font-size:14px}.note{width:100%;min-height:150px;border:1px solid var(--line);border-radius:12px;background:white;padding:13px;font-size:16px;line-height:1.65;resize:vertical}.note:focus{outline:2px solid #aebfd4;border-color:var(--blue)}.book{margin-bottom:10px}.book b{display:block}.book span{font-size:13px;color:var(--muted);line-height:1.6}.noteitem{margin-bottom:10px}.noteitem small{color:var(--muted)}.noteitem p{white-space:pre-wrap;margin:8px 0 0;line-height:1.65}.empty{text-align:center;color:var(--muted);padding:35px}.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);opacity:0;background:var(--navy2);color:#fff;padding:11px 18px;border-radius:99px;transition:.25s;z-index:60}.toast.on{opacity:1;transform:translate(-50%,0)}.mobilenav{display:none}
+    .mark{overflow:hidden;font-size:0}.mark img{width:43px;height:48px;object-fit:contain;object-position:center bottom}.hero{background:linear-gradient(135deg,#587ca9,#253a57);padding-right:205px}.hero:after{display:none}.hero-pet{position:absolute;right:22px;bottom:-8px;width:170px;height:190px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 14px #101b2b66);pointer-events:none}
+    @media(max-width:760px){.side{display:none}.main{margin:0;padding:20px 15px 100px}.mobilenav{display:flex;position:fixed;z-index:30;left:0;right:0;bottom:0;background:var(--navy2);padding:7px 3px calc(7px + env(safe-area-inset-bottom))}.mobilenav button{flex:1;border:0;background:transparent;color:#b8c1ce;font-size:10.5px;padding:6px 1px}.mobilenav button.on{color:#fff;font-weight:800}.hero{padding:25px 108px 25px 20px}.hero-pet{right:0;width:112px;height:135px}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:1/-1}.question{font-size:21px}.module{padding:15px}.module .badge{display:none}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><div class="mark"><img src="pet-front.webp" alt="憨憨"></div><div><b>憨憨哲学</b><small>Think clearly, live wisely</small></div></div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidefoot">进度保存在当前设备<br>每次学习 15–25 分钟</div>
+  </aside>
+  <main class="main">
+    <section class="view on" id="v-home">
+      <div class="hero"><img class="hero-pet" src="pet-front.webp" alt="憨憨"><h1>今天，认真想一个问题</h1><p>不背派别，不抢着得出答案。先把问题说清楚，再检查理由。</p><button class="btn hero-btn" id="startBtn">开始今天的 20 分钟 →</button></div>
+      <div class="stats"><div class="card stat"><div class="num" id="doneNum">0</div><div class="label">已完成学习</div></div><div class="card stat"><div class="num" id="streakNum">0</div><div class="label">连续学习天数</div></div><div class="card stat"><div class="num" id="noteNum">0</div><div class="label">我的思考记录</div></div></div>
+      <div class="card today" id="todayCard"></div>
+    </section>
+    <section class="view" id="v-course"><h1 class="view-title">12 周课程地图</h1><p class="view-sub">每周 3 次：问题导入、观点比较、思辨练习。按顺序学最轻松。</p><div id="courseList"></div></section>
+    <section class="view" id="v-learn"><h1 class="view-title">当次学习</h1><div class="learn" id="learnWrap"></div></section>
+    <section class="view" id="v-notes"><h1 class="view-title">我的思考</h1><p class="view-sub">记录会保存在这台手机里。</p><div id="notesList"></div></section>
+    <section class="view" id="v-books"><h1 class="view-title">阅读路线</h1><p class="view-sub">一次只读一本，遇到读不懂的地方先跳过。</p><div id="bookList"></div></section>
+  </main>
+  <nav class="mobilenav" id="mobilenav"></nav>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const MODULES=[
+ {title:"哲学在做什么",question:"一个问题，怎样才算被真正想过？",views:["哲学不是收集名言，而是为结论给出可检验的理由。","同一个词可能有不同含义；想清楚往往要从界定概念开始。"],caseText:"‘钱能带来幸福’是一句结论。要让它成为可讨论的观点，需要说清楚：多少钱、什么幸福、在什么条件下。",prompt:"选一个你常说的判断，把其中最模糊的词定义清楚。"},
+ {title:"论证与逻辑",question:"为什么‘有理由’不等于‘理由成立’？",views:["论证由前提和结论组成：前提是支撑，结论是想证明的东西。","好论证既要前提可靠，也要前提真的能推出结论。"],caseText:"‘大家都在买，所以这个产品一定好。’人气可以是线索，却不能单独保证质量。",prompt:"写下一个你今天听到的结论，再补出支撑它的前提。"},
+ {title:"知识与怀疑",question:"你凭什么说自己‘知道’一件事？",views:["知觉、记忆和他人的证言都是知识来源，但都可能出错。","合理怀疑不是否定一切，而是根据证据的强弱调整信心。"],caseText:"朋友转发一条健康消息。与其问‘真还是假’，不如先问：来源是谁、有什么证据、有没有其他解释？",prompt:"选择一个你相信的观点，写下什么证据会让你改变想法。"},
+ {title:"自我与意识",question:"从小到大都在变化的你，为什么还是同一个人？",views:["有人认为自我来自身体的连续，有人更看重记忆和心理连续。","‘我’也可能不是固定东西，而是不断变化的过程和叙事。"],caseText:"如果一个人失去了全部记忆，但身体没变，他还是原来那个人吗？",prompt:"你认为保持‘我是我’最重要的条件是什么？为什么？"},
+ {title:"自由意志与责任",question:"如果每个选择都有原因，我们还自由吗？",views:["决定论认为，行为由先前的条件与自然规律决定。","相容论认为，只要行动来自自己的愿望与理由，即使它们有原因，人仍可以是自由的。"],caseText:"一个人因为成长环境形成了暴躁性格。环境能解释他的行为，但能否完全免除他的责任？",prompt:"写下一个你认为‘真正自由’的选择，并说明判断标准。"},
+ {title:"幸福与好生活",question:"感到快乐，就等于过得好吗？",views:["享乐主义把快乐与痛苦的平衡看作幸福的核心。","德性伦理更看重人的品格、能力与一生的充实程度。"],caseText:"一台机器可以让你永远体验快乐，但所有经历都是模拟的。你愿意进去吗？",prompt:"除了‘感觉快乐’，一种好生活还必须包含什么？"},
+ {title:"结果与道德",question:"只要结果够好，手段就可以接受吗？",views:["功利主义关心行为给所有人造成的总体影响。","它提醒我们公平考虑每个人，却也面临少数人权利可能被牺牲的问题。"],caseText:"医生能否牺牲一个健康人，用他的器官救五个病人？简单的‘五大于一’似乎不够。",prompt:"为什么有些好结果仍然不能证明手段正当？"},
+ {title:"原则、权利与义务",question:"有些事情是否无论结果如何都不应该做？",views:["义务论强调，人不只是实现目标的工具，而是应被尊重的目的。","原则保护人不被随意利用，但绝对原则也可能在极端情形中制造困难。"],caseText:"为了保护无辜的朋友，你是否可以对寻找他的恶人说谎？",prompt:"写下一条你认为不应随意破例的原则，再写一个可能的例外。"},
+ {title:"品格与德性",question:"比起‘我该做什么’，‘我想成为谁’更重要吗？",views:["德性伦理关注稳定品格，如勇敢、节制、公正与实践智慧。","德性并非越多越好：勇敢处在怯懦与鲁莽之间，需要在情境中判断。"],caseText:"一个人偶尔做了好事，不代表他已经具有善良的品格。品格需要在选择中反复形成。",prompt:"你最希望培养哪一种品格？它在什么情况下可能变成过度？"},
+ {title:"自由、平等与公平",question:"公平是每个人得到一样多吗？",views:["平等可以指权利、机会、资源或结果的平等，它们不是同一件事。","自由与平等并非总是敌人，但当资源与机会分配时，两者可能需要取舍。"],caseText:"两个学生都得到一本相同的书，但其中一人看不清小字。形式上一样，实际机会却不一定平等。",prompt:"想一个现实分配问题，说明你更在意规则、机会还是结果的平等。"},
+ {title:"中国哲学的生活智慧",question:"人应如何与自己、他人和世界相处？",views:["儒家重视在关系与实践中修养仁、义与礼。","道家提醒人看见人为标准的局限，少一点强求，保留生命的自然与可能。"],caseText:"面对过度竞争，儒家可能问我们是否尽到关系中的责任；道家可能问我们是否被一种标准绑架。",prompt:"选择一个最近的生活困扰，分别用儒家和道家的角度提一个问题。"},
+ {title:"意义、死亡与选择",question:"如果生命有限，它会因此没有意义吗？",views:["意义不一定要由宇宙从外部授予，也可以从关系、创造、承诺与实践中形成。","生命的有限可能不是意义的敌人，反而让选择具有分量。"],caseText:"一首曲子会结束，不代表演奏过程没有价值。但这个比喻能否完全解答人生意义问题？",prompt:"写下目前让你的生活有意义的三件事，再说明它们为什么重要。"}
+];
+const BOOKS=[
+ ["第 1 本：《你的第一本哲学书》","托马斯·内格尔｜短小直接，跟着问题读，不用背。"],
+ ["第 2 本：《苏菲的世界》","乔斯坦·贾德｜用小说建立西方哲学史的大致地图。"],
+ ["第 3 本：《公正》","迈克尔·桑德尔｜通过案例练习道德与政治哲学。"],
+ ["第 4 本：《中国哲学简史》","冯友兰｜建立中国哲学的基本地图，先看问题，不求背年代。"],
+ ["第 5 本：《哲学问题》","伯特兰·罗素｜开始接触更正式的哲学论证。"]
+];
+const NAV=[['home','今日'],['course','课程'],['learn','学习'],['notes','思考'],['books','书单']];
+const KEY='hanhan-philosophy-v1';
+let D=load(), S=null;
+function load(){try{return Object.assign({done:{},notes:[],dates:[]},JSON.parse(localStorage.getItem(KEY)||'{}'))}catch(e){return{done:{},notes:[],dates:[]}}}
+function save(){localStorage.setItem(KEY,JSON.stringify(D))}
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function dateStr(d=new Date()){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function nextIndex(){for(let i=0;i<MODULES.length*3;i++)if(!D.done[i])return i;return 0}
+function doneCount(){return Object.keys(D.done).filter(k=>D.done[k]).length}
+function streak(){let n=0,d=new Date();const set=new Set(D.dates);for(;;){if(!set.has(dateStr(d)))break;n++;d.setDate(d.getDate()-1)}return n}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),1800)}
+function buildNav(){const h=NAV.map(x=>`<button data-v="${x[0]}">${x[1]}</button>`).join('');document.getElementById('nav').innerHTML=h;document.getElementById('mobilenav').innerHTML=h;document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>show(b.dataset.v))}
+function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('on',x.id==='v-'+v));document.querySelectorAll('[data-v]').forEach(x=>x.classList.toggle('on',x.dataset.v===v));if(v==='home')renderHome();if(v==='course')renderCourse();if(v==='notes')renderNotes();if(v==='books')renderBooks();window.scrollTo(0,0)}
+function renderHome(){const i=nextIndex(),m=MODULES[Math.floor(i/3)],part=i%3;document.getElementById('doneNum').textContent=doneCount()+' / 36';document.getElementById('streakNum').textContent=streak()+' 天';document.getElementById('noteNum').textContent=D.notes.length;document.getElementById('todayCard').innerHTML=`<h3>今日任务：第 ${Math.floor(i/3)+1} 周 · ${['问题导入','观点比较','思辨练习'][part]}</h3><b>${m.title}</b><p>${m.question}</p><div class="progress"><i style="width:${doneCount()/36*100}%"></i></div>`}
+function renderCourse(){document.getElementById('courseList').innerHTML=MODULES.map((m,mi)=>{const n=[0,1,2].filter(p=>D.done[mi*3+p]).length;return `<div class="card module ${n===3?'done':''}"><div class="num">${n===3?'✓':mi+1}</div><div class="info"><b>第 ${mi+1} 周 · ${m.title}</b><span>${m.question}</span></div><span class="badge ${n===3?'done':''}">${n} / 3</span><button class="btn small" onclick="start(${mi*3+(n<3?n:0)})">${n===3?'复习':'继续'}</button></div>`}).join('')}
+function start(i=nextIndex()){S={i,step:0,choice:null};show('learn');renderLearn()}
+function renderLearn(){if(!S){document.getElementById('learnWrap').innerHTML='<div class="card empty">点击“今日”开始一次学习。</div>';return}const mi=Math.floor(S.i/3),part=S.i%3,m=MODULES[mi];let body='';if(S.step===0)body=`<div class="eyebrow">第 ${mi+1} 周 · ${['问题导入','观点比较','思辨练习'][part]}</div><div class="question">${m.question}</div><p class="bodytext">先不查答案。在心里停一分钟，想想你的直觉回答，以及支持它的理由。</p><button class="btn primary" onclick="next()">我想过了，继续 →</button>`;if(S.step===1)body=`<div class="eyebrow">两个思考角度</div>${m.views.map((v,i)=>`<div class="quote"><b>角度 ${i+1}</b><br>${v}</div>`).join('')}<button class="btn primary" onclick="next()">看一个例子 →</button>`;if(S.step===2)body=`<div class="eyebrow">放进现实里</div><div class="question" style="font-size:20px">${m.caseText}</div><p class="bodytext">检查一下：结论是什么？关键理由是什么？最强的反对意见会是什么？</p><button class="btn primary" onclick="next()">轮到我来想 →</button>`;if(S.step===3)body=`<div class="eyebrow">写下你的暂时答案</div><div class="question" style="font-size:20px">${m.prompt}</div><textarea class="note" id="answer" placeholder="我的结论是……\n我的理由是……\n可能的反驳是……"></textarea><div class="row" style="margin-top:12px"><button class="btn primary" onclick="finish()">保存并完成打卡</button><button class="btn" onclick="finish(true)">暂时跳过书写</button></div>`;document.getElementById('learnWrap').innerHTML=`<div class="steps">${[0,1,2,3].map(i=>`<i class="${i<=S.step?'on':''}"></i>`).join('')}</div><div class="card">${body}</div>`}
+function next(){S.step++;renderLearn();window.scrollTo(0,0)}
+function finish(skip=false){const text=skip?'':(document.getElementById('answer').value||'').trim(),m=MODULES[Math.floor(S.i/3)];if(!skip&&!text){toast('先写一点自己的想法');return}if(text)D.notes.push({date:dateStr(),title:m.title,prompt:m.prompt,text});D.done[S.i]=true;if(!D.dates.includes(dateStr()))D.dates.push(dateStr());save();const completed=S.i;S=null;document.getElementById('learnWrap').innerHTML=`<div class="card"><div class="eyebrow">本次完成</div><div class="question">你今天没有记住一个标准答案，而是练习了如何想。</div><div class="feedback">第 ${completed+1} / 36 次学习已记录。下次将继续同一主题或进入新主题。</div><button class="btn primary" style="margin-top:15px" onclick="show('home')">回到今日页</button></div>`}
+function renderNotes(){const e=document.getElementById('notesList');e.innerHTML=D.notes.length?D.notes.slice().reverse().map(n=>`<div class="card noteitem"><b>${esc(n.title)}</b><small>${esc(n.date)} · ${esc(n.prompt)}</small><p>${esc(n.text)}</p></div>`).join(''):'<div class="card empty">完成一次思辨练习后，你的想法会出现在这里。</div>'}
+function renderBooks(){document.getElementById('bookList').innerHTML=BOOKS.map((b,i)=>`<div class="card book"><b>${b[0]}</b><span>${b[1]}</span></div>`).join('')+'<div class="card"><b>阅读时只问五件事</b><p class="bodytext">作者在回答什么？结论是什么？理由是什么？最薄弱的地方是什么？我目前怎么看？</p></div>'}
+buildNav();document.getElementById('startBtn').onclick=()=>start();show('home');
+</script>
+</body>
+</html>
